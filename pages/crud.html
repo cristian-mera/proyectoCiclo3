@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crud</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/estilosCrud.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <main class="container-fluid mi-bg-nav mi-estilo-crud">
+    <!-- mi navbar -->
+    <header class="container-fluid mi-estilo-crud">
+      <div class="container ">
+
+          <nav class="navbar navbar-expand-lg navbar-light  ">
+              <img class="" src="../img/LOGO_BLANCO.png" alt="Barber House" style="height: 80px;">
+              <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse"
+                  data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                      <a class="nav-link active" href="../index.html">Inicio </a>
+                      <a class="nav-link" href="../index.html">Servicios</a>
+                      <a class="nav-link" href="../index.html">Mi Equipo</a>
+                      <a class="nav-link" href="./reserva.html">Reservar</a>
+                      <a class="nav-link" href="./registro.html">Registro<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="./login.html">Login</a>
+
+                  </div>
+              </div>
+          </nav>
+      </div>
+
+  </header>
+    <!-- cierre del navbar -->
+
+    <div class="row">
+      <!-- seccion administrador -->
+      <div class="col-lg-3 mi-bg">
+        <div class="row justify-content-center align-self-center mi-background">
+          <figure class="figure p-5">
+            <img class="img-fluid rounded-circle" src="../img/user.png" alt="" />
+            <figcaption class="figure-caption">
+              <p>Adm. djmendoza</p>
+              <p>Last Login</p>
+              <p>29-09-2021</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- cierre administrador -->
+
+      <!-- seccion botonera - tabla -->
+      <div class="col-lg-9 mi-estilo-crud">
+        <h1 class="text-center p-3">MI CRUD</h1>
+        <div class="contenedorFlex">
+          <div class="seccion-botones">
+            <div class="mi-botonera">
+              <button class="mi-boton" type="button" data-toggle="modal" data-target="#btn-guardar">Guardar</button>
+              <button class="mi-boton" type="button" data-toggle="modal" data-target="#btn-buscar">Buscar</button>
+              <button class="mi-boton" type="button" data-toggle="modal" data-target="#btn-actualizar">Actualizar</button>
+              <button class="mi-boton" type="button" data-toggle="modal" data-target="#btn-eliminar">Eliminar</button>
+            </div>
+          </div>
+
+          <div class="seccion-modal-botones">
+            <div class="modal-botones">
+              <!-- Modal -->
+              <div class="modal fade" id="btn-guardar" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Registro Usuarios</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Id o Cédula</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="lb-nombres">Nombres</label>
+                          <input type="text" class="form-control" id="lb-nombres">
+                        </div>
+                        <div class="form-group">
+                          <label for="lb-apellidos">Apellidos</label>
+                          <input type="text" class="form-control" id="lb-apellidos">
+                        </div>
+                        <div class="form-group">
+                          <label for="lb-tel">Teléfono</label>
+                          <input type="text" class="form-control" id="lb-tel">
+                        </div>
+                        <div class="form-group">
+                          <label for="lb-hogar">Dirección hogar</label>
+                          <input type="text" class="form-control" id="lb-hogar">
+                        </div>
+                        <div class="form-group">
+                          <label for="lb-email">Email</label>
+                          <input type="text" class="form-control" id="lb-email">
+                        </div>
+                        
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <!-- cierre modal boton 1 -->
+            <div class="modal-botones">
+              <!-- Modal -->
+              <div class="modal fade" id="btn-buscar" data-backdrop="static" data-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Buscar Usuarios</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="busq-usuario">Id o Cédula</label>
+                        <input type="text" class="form-control" id="busq-usuario" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Digíta el id del usuario</small>
+                      </div>
+                      
+                      
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            </div>
+            <!-- cierre modal boton 2 -->
+
+            <div class="modal-botones">
+              <!-- Modal -->
+              <div class="modal fade" id="btn-actualizar" data-backdrop="static" data-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Actualizar Usuarios</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body ">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="busq-cedula" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Ingrese el id a actualizar....</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="act-cedula">Id o Cédula</label>
+                        <input type="text" class="form-control" id="act-cedula" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="act-nombres">Nombres</label>
+                        <input type="text" class="form-control" id="act-nombres">
+                      </div>
+                      <div class="form-group">
+                        <label for="act-apellidos">Apellidos</label>
+                        <input type="text" class="form-control" id="act-apellidos">
+                      </div>
+                      <div class="form-group">
+                        <label for="act-tel">Teléfono</label>
+                        <input type="text" class="form-control" id="act-tel">
+                      </div>
+                      <div class="form-group">
+                        <label for="act-hogar">Dirección hogar</label>
+                        <input type="text" class="form-control" id="act-hogar">
+                      </div>
+                      <div class="form-group">
+                        <label for="act-email">Email</label>
+                        <input type="text" class="form-control" id="act-email">
+                      </div>
+                      
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <!-- cierre modal boton 3 -->
+
+            <div class="modal-botones">
+              <!-- Modal -->
+              <div class="modal fade" id="btn-eliminar" data-backdrop="static" data-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Eliminar Usuarios</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="eliminar-usuario">Id o Cédula</label>
+                        <input type="text" class="form-control" id="eliminar-usuario" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Digíta el id del usuario</small>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Eliminar</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <!-- cierre modal boton 4 -->
+          </div>
+          <div class="seccionTabla table-responsive">
+            <h2 class="text-center p-5">CLIENTES</h2>
+            <table class="
+                  table table-dark
+                  table-bordered
+                  table-hover
+                  table-responsive-sm
+                  mi-color-texto-table
+                  table-striped
+                  col-xl
+                ">
+              <thead class="thead-dark">
+                <tr>
+                  <th>ID</th>
+                  <th>NOMBRES</th>
+                  <th>APELLIDOS</th>
+                  <th>TELÉFONO</th>
+                  <th>DIRECCIÓN</th>
+                  <th>EMAIL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>111.111.111</td>
+                  <td>ALBERTO JOSE</td>
+                  <td>VARGAS PEREZ</td>
+                  <td>333-4565789</td>
+                  <td>barrio los libertadores</td>
+                  <td>ajose@yahoo.com.co</td>
+                </tr>
+                <tr>
+                  <td>111.111.111</td>
+                  <td>ALBERTO JOSE</td>
+                  <td>VARGAS PEREZ</td>
+                  <td>333-4565789</td>
+                  <td>barrio los libertadores</td>
+                  <td>ajose@yahoo.com.co</td>
+                </tr>
+                <tr>
+                  <td>111.111.111</td>
+                  <td>ALBERTO JOSE</td>
+                  <td>VARGAS PEREZ</td>
+                  <td>333-4565789</td>
+                  <td>barrio los libertadores</td>
+                  <td>ajose@yahoo.com.co</td>
+                </tr>
+                <tr>
+                  <td>111.111.111</td>
+                  <td>ALBERTO JOSE</td>
+                  <td>VARGAS PEREZ</td>
+                  <td>333-4565789</td>
+                  <td>barrio los libertadores</td>
+                  <td>ajose@yahoo.com.co</td>
+                </tr>
+                <tr>
+                  <td>111.111.111</td>
+                  <td>ALBERTO JOSE</td>
+                  <td>VARGAS PEREZ</td>
+                  <td>333-4565789</td>
+                  <td>barrio los libertadores</td>
+                  <td>ajose@yahoo.com.co</td>
+                </tr>
+                <tr>
+                  <td>111.111.111</td>
+                  <td>ALBERTO JOSE</td>
+                  <td>VARGAS PEREZ</td>
+                  <td>333-4565789</td>
+                  <td>barrio los libertadores</td>
+                  <td>ajose@yahoo.com.co</td>
+                </tr>
+                <tr>
+                  <td>111.111.111</td>
+                  <td>ALBERTO JOSE</td>
+                  <td>VARGAS PEREZ</td>
+                  <td>333-4565789</td>
+                  <td>barrio los libertadores</td>
+                  <td>ajose@yahoo.com.co</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <div>
+    <footer class="container-fluid bg-dark mi-footer">
+      <div class="container">
+        <div class="row text-center p-2 justify-content-between text-light">
+          <figure class="col-lg-12">
+            <img class="card-img-top mi-img" src="../img/LOGO_BLANCO.png" alt="logo" />
+          </figure>
+          <div class="autor">
+            <p>&copy;2021 - Barber House</p>
+          </div>
+          <div class="redes-sociales text-center">
+            <i class="bi bi-facebook mi-redes"></i>
+            <i class="bi bi-instagram mi-redes"></i>
+            <i class="bi bi-whatsapp mi-redes"></i>
+            <i class="bi bi-youtube mi-redes"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

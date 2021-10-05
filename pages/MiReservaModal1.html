@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi reserva modal 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="cajaModal">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Boton Mi Reserva
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mi Reserva</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row p-4 rounded-lg" style="border:solid 1px gray;">
+                                <div class="icono">
+                                    <h1><i class="bi bi-calendar-date"></i></h1>
+                                </div>
+                                <div class="informacion">
+                                    <ul>
+                                        <li>SERVICIO SELECCIONADO</li>
+                                        <li>1. CORTE</li>
+                                        <li>Precio total: 12.000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-lg p-4 rounded-lg" style="border:solid 1px gray;">
+                                    <div class="pt-3">
+                                        <h6>1. CORTE</h6>
+                                        <p>40 Minutos</p>
+                                    </div>
+                                    <div>
+                                        <h6>BARBEROS:</h6>
+                                        <select class="p-2" name="Barberos" id="Barberos">Seleccione...< <option
+                                                value="Seleccione">Seleccione...</option>
+                                                <option value="Pepe Iniesta">Pepe Iniesta</option>
+                                                <option value="Carlos Tejada">Carlos Tejada</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg p-4 rounded-lg" style="border:solid 1px gray;">
+                                    <div class="pt-3">
+                                        <h6>2. SELECCIONE EL DÍA.</h6>
+                                        <input type="date" name="fecha" id="bi-calendar-date" style="width:100%">
+                                    </div>
+                                </div>
+                                <div class="col-lg p-4 rounded-lg" style="border:solid 1px gray;">
+                                    <div class="pt-3">
+                                        <h6>3. SELECCIONE LA HORA.</h6>
+                                        <ul>
+                                            <li>MAÑANA</li>
+                                            <li>0* Horas disponibles</li>
+                                            <li>TARDE</li>
+                                            <li>0* Horas disponibles</li>
+                                            <li>NOCHE</li>
+                                            <li>0* Horas disponibles</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalToggle2">Siguiente</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel2">Mi Reserva</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row justify-content-between">
+                                    <div class="col-6">4. DATOS DE LA RESERVA
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-ls-6">
+                                                    <Label for="name">NOMRBES*</Label><br>
+                                                    <input class="mr-2" type="text" name="nombres" size="25%">
+                                                </div>
+
+                                                <div class="col-ls-6">
+                                                    <Label for="lastname">APELLIDOS*</Label><br>
+                                                    <input class="mr-2" type="text" name="apellidos" size="25%">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-1">
+                                                <div class="col-ls-6">
+                                                    <Label for="name">EMAIL*</Label><br>
+                                                    <input class="mr-2" type="text" name="email" size="25%">
+                                                </div>
+                                                <div class="col-ls-6">
+                                                    <Label for="name">TELEFONO*</Label><br>
+                                                    <input class="mr-2" type="text" name="telefono" size="25%">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-ls-8">
+                                                <p>DOCUMENTO* <br><input type="text" name="Documento"
+                                                        size="20%"></p>
+                                                    </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="form-group shadow-textarea">
+                                                    <label for="comentarios">COMENTARIOS</label>
+                                                    <textarea class="form-control" style="width: 100%;"
+                                                        id="comentarios" rows="5"
+                                                        placeholder="Escribe aquí..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="">
+                                            <div class="row p-1" style="border: solid 1px grey;">
+                                                <div class="icono col-md-1">
+                                                    <h1><i class="bi bi-cash-coin"></i></h1>
+                                                </div>
+                                                <div class="informacion col-md-11" style="width: 70%;">
+                                                    <h5 class="mt-2">MI RESUMEN</h5>
+                                                    <hr>
+                                                </div>
+                                                <div class="container">
+                                                    <label for="CORTE">1. CORTE</label>
+                                                    <div class="row icono">
+                                                        <h3 class="col-md-1"><i class="bi bi-calendar-date"></i></h3>
+                                                        <div class="col-md-11">
+                                                            <p class="mt-2">18 de septiembre del 2021, a las 17:00 hrs
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row icono">
+                                                        <h3 class="col-md-1"><i class="bi bi-clock"></i>
+                                                        </h3>
+                                                        <div class="col-md-11">
+                                                            <p class="mt-2">Duración total 01:00 hrs</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row icono">
+                                                        <h3 class="col-md-1"><i class="bi bi-geo-alt-fill"></i>
+                                                        </h3>
+                                                        <div class="col-md-11">
+                                                            <p class="mt-2">Calle 30 80122, Colombia</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container">
+                                                        <p class="text-right">Precio total: $12.000</p>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalToggle2">Regresar</button>
+                                                <button type="button" class="btn btn-primary">Guardar</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                                            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                                            crossorigin="anonymous"></script>
+                                        <script
+                                            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                                            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                                            crossorigin="anonymous"></script>
+                                        <script
+                                            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+                                            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+                                            crossorigin="anonymous"></script>
+                                    </div>
+</body>
+
+</html>
