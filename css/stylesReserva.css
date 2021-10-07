@@ -1,10 +1,12 @@
 
 .fondoNav{
-   background-color:   #D9AB91;;
+   background-color:   #cf5117;;
    
 }
 .colorB{
-    background-color:  #F2E3D5;
+    background-color: black;
+    /* background-image: url(../img/reserva.png);
+    background-attachment: fixed; */
 }
 
 .containerLogo{
@@ -72,5 +74,5 @@
     }
 }
 .bgNav{
-background-color: rgba(146, 78, 28, 0.637);
+background-color: rgba(211, 112, 31, 0.733);
 }

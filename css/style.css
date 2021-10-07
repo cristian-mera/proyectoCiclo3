@@ -1,8 +1,13 @@
 
 .btnInicio{
-    background-color: rgba(211, 199, 34, 0.76);
+    background-color: rgba(211, 199, 34, 0.534);
+    border-radius: 30px;
+    border: 1px solid black;
+    
     
 }
+
+
 
 .bgNavbar{
     background-color: rgba(223, 146, 23, 0.185);
@@ -70,10 +75,13 @@ a{
 
 @media screen and (min-width:761px){
     h1{
-        font-size: 80px;
+        font-size: 90px;
     }
     .p1{
         font-size: 50px;
+    }
+    .btnReserva{
+        font-size: 35px;
     }
 }
 
@@ -84,9 +92,12 @@ a{
     .p1{
         font-size: 30px;
     }
+    .btnReserva{
+        font-size: 25px;
+    }
 }
 
 .sombra{
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    
 box-shadow: 5px 5px 15px 5px #000000;
 }
