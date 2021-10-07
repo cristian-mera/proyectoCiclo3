@@ -16,7 +16,7 @@
 
 
 .imgInicio{
-    background-image: url(/img/inicio.png) !important;
+    background-image: url(../img/inicio.png) !important;
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
