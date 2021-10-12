@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Barber House</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body class="imgInicio">
@@ -17,11 +18,11 @@
 
         <!-- Seccion Header - Navbar -->
         <div class="imgInicio">
-
-            <header class=" container-fluid ">
+            <a class="fijo" id="up" href="index.html"><i class="bi bi-arrow-up-circle mi-estilo-inicio"></i></a>
+            <header class=" container-fluid mi-bg-navbar mi-efecto-header">
                 <div class="container">
 
-                    <nav class="navbar navbar-expand-lg navbar-light  ">
+                    <nav class="navbar navbar-expand-lg navbar-light">
                         <img class="" src="./img/LOGO_BLANCO.png" alt="Barber House" style="height: 80px;">
                         <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse"
                             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -36,7 +37,6 @@
                                 <a class="nav-link" href="./pages/reserva.html">Reservar</a>
                                 <a class="nav-link" href="./pages/registro.html">Registro</a>
                                 <a class="nav-link" href="./pages/login.html">Login</a>
-
                             </div>
                         </div>
                     </nav>
@@ -47,14 +47,26 @@
             <!-- Seccion - Jumbotron -->
             <section class="h-75 text-light">
                 <div class="text-light h-75 ">
+                    <div class="container">
+                        <div class="row contenedorSlider justify-content-start align-items-center">
+                            <div class="slider">
 
-                    <div class="row justify-content-end align-items-end h-75">
+                                <h1 class="mi-estilo-h1 ">LA ELEGANCIA</h1>
+                                <p class="mi-estilo-p">es cuestión de estilo.</p>
+                                <a href="./pages/reserva.html" class="boton-flex btn btn-lg btn-warning btnInicio sombra btnReserva p-1.5rem"> Reserva Ahora </a>
+                                
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="col-lg-10 col-md-11">
+                            
+                        
+                    <!-- <div class="row justify-content-end align-items-end h-100">
+
+                        <div class="col-lg-10 col-md-11 pt-5">
                             <div>
-
-                                <h1>LA ELEGANCIA</h1>
-                                <h2 class="p1">es cuestión de estilo.</h2>
+                                <h1 class="mi-estilo-h1 ">LA ELEGANCIA</h1>
+                                <p class="mi-estilo-p">es cuestión de estilo.</p>
                             </div>
                         </div>
                     </div>
@@ -66,7 +78,7 @@
                                 class="btn btn-lg btn-warning btnInicio sombra btnReserva p-1.5rem"> Reserva Ahora </a>
                         </div>
 
-                    </div>
+                    </div> -->
                 </div>
             </section>
         </div>
@@ -74,11 +86,11 @@
         <!-- Sección de Servicios -->
 
         <section>
-            <div class="container">
-                <h2 class="text-center m-5 text-light p1" id="Servicios">SERVICIOS</h2>
+            <div class="container seccion-servicios">
+                <h2 class="text-center m-5 text-light p1 mi-estilo-h2 mi-efecto" id="Servicios">SERVICIOS</h2>
 
                 <div class="card-deck">
-                    <div class="card sombra radius">
+                    <div class="card sombra radius mi-efecto">
                         <img src="./img/mostacho.png" class="card-img-top radius" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center">Barba</h5>
@@ -96,7 +108,7 @@
 
                         </div>
                     </div>
-                    <div class="card sombra radius">
+                    <div class="card sombra radius mi-efecto">
                         <img src="./img/corteJoven.png" class="card-img-top radius" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center">Corte</h5>
@@ -112,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card sombra radius">
+                    <div class="card sombra radius mi-efecto">
                         <img src="./img/corteVintage.png" class="card-img-top radius" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center">Estilo Vintage</h5>
@@ -130,10 +142,10 @@
         <!-- Sección Mi Equipo -->
 
         <section>
-            <div class="container">
-                <h2 class="text-center m-5 text-light p1" id="equipo">MI EQUIPO</h2>
+            <div class="container seccion-miEquipo">
+                <h2 class="text-center m-5 text-light p1 mi-estilo-h2 mi-efecto" id="equipo">MI EQUIPO</h2>
 
-                <div class="card-deck">
+                <div class="card-deck mi-efecto">
                     <div class="card sombra radius">
                         <img src="./img/barber2.png" class="card-img-top radius p-3" alt="...">
                         <div class="card-body">
@@ -142,7 +154,7 @@
                                 festival pereira</p>
                         </div>
                     </div>
-                    <div class="card sombra radius">
+                    <div class="card sombra radius mi-efecto">
                         <img src="./img/barber1.png" class="card-img-top radius p-3" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center">Carles Puyol</h5>
@@ -197,12 +209,13 @@
         </section>
 
         <!--footer-->
-        <footer class="container d-md-flex align-items-center justify-content-center">
+        <footer class="container d-md-flex mt-5 align-items-center justify-content-center">
             <div class="container-sm w-md-25 ">
                 <img src="../img/LOGO_BLANCO.png" alt="seccion logo sitio web" style="height: 90px;">
             </div>
             <div class="container-sm">
-                <p class="text-left text-black-100 text-justify text-light">Derechos reservados de autor@ Grupo 6 g37</p>
+                <p class="text-left text-black-100 text-justify text-light">Derechos reservados de autor@ Grupo 6 g37
+                </p>
             </div>
             <div class="container-sm container-md container-lg">
                 <p class="text-left text-light">Siguenos en:</p>
@@ -232,6 +245,8 @@
 
     </main>
 
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -241,6 +256,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
